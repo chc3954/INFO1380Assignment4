@@ -1,0 +1,221 @@
+* { box-sizing: border-box; }
+h1, h2, h3, h4, a{ margin: 0; }
+
+body {
+    width: 100%;
+    /* min-width: 700px; */
+    background-color: white;
+    font-family: 'Kalam', cursive;
+}
+
+/* ================================================== */
+/* Navigation Bar                                     */
+.menu-bar {
+    /* position */
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    /* size */
+    width: 100%;
+    margin: 0;
+    padding: 15px 5%;
+    /* background */
+    background-color: black;
+    opacity: .8;
+    /* display */
+    display: flex;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.menu-list > a {
+    margin: 0 40px;
+    text-decoration: none;
+    font-size: 3vh;
+    font-weight: 700;
+    transition: all 0.2s;
+    color: white;
+    transition: all .4s;
+}
+
+.menu-list > a:hover{
+    color: orange;
+}
+
+/* ================================================== */
+/* Main                                               */
+/* Home                                               */
+.home-background {
+    background-image: url(../resources/office_desk.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 99vw;
+    height: 67vw;
+    /* opacity: .9; */
+    position: relative;
+    z-index: -1;
+    
+}
+
+.home-intro {
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    font-size: 4vw;
+    text-decoration: underline;
+    color: white;
+}
+
+/* About                                              */
+.about-title {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 3vw;
+    margin-top: 12vh;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+}
+
+.about-card {
+    width: 20%;
+    margin: 5vh 3vw;
+    padding: 3% 2%;
+    background-color: rgba(255, 150, 0, 0.7);
+    border-radius: 20px;
+    color: black;
+    box-shadow: 5px 10px 8px #888888
+}
+
+.about-card-title {
+    font-size: 2.5vw;
+    text-decoration: underline;
+    margin-bottom: 1em;
+    text-shadow: 5px 10px 15px rgba(255, 100, 0);
+}
+
+.about-card-content {
+    font-size: 2vw;
+}
+
+/* Work                                               */
+#work {
+    background-color: lightgray;
+    padding: 5vw;
+}
+
+.work-title {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 3vw;
+}
+
+.work-content {
+    width: 70vw;
+    height: 70vh;
+    margin: 5vh auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2vw;
+}
+
+.workBox {
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: all .5s;
+}
+
+.workBox > .caption {
+    width: 100%;
+    height: 2vw;
+    position: absolute;
+    bottom: 0;
+    left: -1%;
+    text-align: center;
+    background-color: #333;
+    font-size: 1.5vw;
+    font-weight: 700;
+    color: white;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.workBox:hover {
+    transform: scale(103%);
+}
+
+.workBox:hover .caption {
+    left: 0%;
+    opacity: .9;
+}
+
+/* Contact                                            */
+#contact {
+    padding: 5vw;
+}
+
+.contact-title {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 3vw;
+}
+
+.contact-content {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+
+.contact-intro, .contact-input {
+    margin: 0.5vw;
+}
+
+.contact-submit {
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    height: 5vh;
+    font-size: 1.5vw;
+    font-weight: 700;
+    color: white;
+    transition: all .2s;
+}
+
+.contact-submit:hover {
+    background-color: rgb(255, 120, 0);
+}
+
+.contact-submit:active {
+    transform: translateY(3px);
+}
+
+.contact-errorMsg {
+    text-align: center;
+    color: red;
+    opacity: 0;
+    transition: all .3s;
+}
+
+/* ================================================== */
+/* Footer                                             */
+.footer {
+    margin: 0;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* ================================================== */
+/* Responsive                                         */
+@media screen and (max-width: 1280px) {
+    .work-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
