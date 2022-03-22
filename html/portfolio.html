@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyunchul Cho - Prospective Developer</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/portfolio.css">
+    <!-- javascript -->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/portfolio.js"></script>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="../resources/favicon.ico">
+</head>
+<body>
+    <!-- nav -->
+    <header>
+        <nav class="menu">
+            <ul class="menu-bar">
+                <li class="menu-list">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="menu-list">
+                    <a href="#about">About</a>
+                </li>
+                <li class="menu-list">
+                    <a href="#work">Work</a>
+                </li>
+                <li class="menu-list">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- main -->
+    <main>
+        <!-- home -->
+        <section id="home">
+            <div class="home-background">
+                <div class="home-intro"></div>
+            </div>
+        </section>
+        <!-- About -->
+        <section id="about">
+            <h1 class="about-title">ABOUT</h1>
+            <div class="about-content">
+                <div class="about-card">
+                    <h2 class="about-card-title">Background</h2>
+                    <div class="about-card-content">
+                        <p>2021 ~ NOW<br><b>Diploma of Computer Programming and Analysis</b>, Conestoga College</p>
+                        <p>2012 ~ 2016<br><b>Bachelor of Computer Science</b>, ROK Naval Academy</p>
+                    </div>
+                </div>
+                <div class="about-card">
+                    <h2 class="about-card-title">Student</h2>
+                    <div class="about-card-content">
+                        <p>Studying<br><b>HTML, CSS, Javascript, Jquery, Node.js, C#, ...</b></p>
+                        <p>Fall 2021<br>Session GPA: <b>3.96</b><br>Weighted Average: <b>93.82</b></p>
+                    </div>
+                </div>
+                <div class="about-card">
+                    <h2 class="about-card-title">Developer</h2>
+                    <div class="about-card-content">
+                        <ul><b>
+                            <li>C#</li>
+                            <li>Java</li>
+                            <li>Phython</li>
+                            <li>HTML/CSS/JS</li>
+                            <li>Jquery</li>
+                            <li>Node.js</li>
+                        </b></ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Work -->
+        <section id="work">
+            <h1 class="work-title">WORK</h1>
+            <div class="work-content">
+                <div class="workBox" style="background-image: url(../resources/work1.jpg);">
+                    <div class="caption">Kiosk page</div>
+                </div>
+                <div class="workBox" style="background-image: url(../resources/work2.jpg);">
+                    <div class="caption">Garage sale page</div>
+                </div>
+                <div class="workBox" style="background-image: url(../resources/work3.jpg);">
+                    <div class="caption">Flight reservation app</div>
+                </div>
+                <div class="workBox" style="background-image: url(../resources/work4.jpg);">
+                    <div class="caption">Maintenance reservation app</div>
+                </div>
+                <div class="workBox" style="background-image: url(../resources/work5.jpg);">
+                    <div class="caption">Encounter note app</div>
+                </div>
+                <div class="workBox" style="background-image: url(../resources/work6.jpg);">
+                    <div class="caption">Basic webdesign 1</div>
+                </div>
+                <div class="workBox" style="background-image: url(../resources/work7.jpg);">
+                    <div class="caption">Basic webdesign 2</div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact -->
+        <section id="contact">
+            <h1 class="contact-title">CONTACT</h1>
+            <form action="mailto: hcho2831@conestogac.on.ca" method="post" enctype="text/plain" class="contact-content">
+                <div class="contact-intro">If you have any questions or anything you want to say about me, please leave any comments. Anything is welcome.</div>
+                <input type="text" id="contac-name" class="contact-input" placeholder="Name" >
+                <input type="text" id="contact-email" class="contact-input" placeholder="Email" >
+                <textarea id="contact-message" class="contact-input" placeholder="Message" rows="10" ></textarea>
+                <input type="submit" value="Send" class="contact-input contact-submit"></input>
+                <span class="contact-errorMsg"></span>
+            </form>
+            
+        </section>
+    </main>
+    <footer class="footer">
+        <h3> &copy;2022 Hyunchul Cho, All Rights Reserved.</h3>
+    </footer>
+</body>
+</html>
